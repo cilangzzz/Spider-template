@@ -6,7 +6,7 @@ def ParseCookie(strCookieData):
     """
     cookies = {}
     for i in strCookieData.split(";"):
-        if len(i.split("=")) != 2:
+        if len(i.split("=")) < 2:
             continue
         key = i.split("=")[0]
         value = i.split("=")[1]
@@ -28,3 +28,5 @@ def ParseHeader(strHeaderData):
         value = i.split(":")[1].replace(" ", "")
         header[key] = value
     return header
+
+

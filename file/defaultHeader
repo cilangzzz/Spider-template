@@ -2,7 +2,7 @@ Accept: */*
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,en-GB;q=0.7,en-US;q=0.6
 Connection: keep-alive
-Host: hey11.cjkypo.com
+Host: play.modujx.com
 Origin: https://huolangdm.com
 Referer: https://huolangdm.com/
 Sec-Fetch-Dest: empty

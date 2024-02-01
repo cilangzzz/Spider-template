@@ -3,7 +3,7 @@ regex.py 通过正则,Xpath,网页信息获取
 """
 import re
 
-from fontTools.misc import etree
+from lxml import html
 
 
 def GetAllScriptFromHtml(strHtml):
@@ -12,8 +12,8 @@ def GetAllScriptFromHtml(strHtml):
     :param strHtml:
     :return:
     """
-    e = etree.HTML(strHtml)
-    return e.xpath('//script//text()')
+    et = html.fromstring(strHtml)
+    return et.xpath('//script//text()')
 
 
 def GetScriptAllVariable(strScript):
